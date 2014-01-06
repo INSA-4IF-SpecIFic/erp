@@ -18,7 +18,7 @@ PDFVIEWER=evince
 endif
 endif
 
-.PHONY: build clean
+.PHONY: build clean all
 
 build: $(TEX_NAME).pdf
 	@$(CLEAN_CMD)
@@ -27,6 +27,8 @@ clean:
 	@$(CLEAN_CMD)
 	@rm -f $(TEX_NAME).pdf
 	@echo "# cleaned" ;
+
+all: clean build
 
 view:
 	@$(PDFVIEWER) $(TEX_NAME).pdf > /dev/null 2>&1 &
