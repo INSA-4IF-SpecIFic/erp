@@ -1,3 +1,5 @@
+# Following line HAS TO be the first one.
+THIS := $(lastword $(MAKEFILE_LIST))
 
 TEX_NAME=SpecIFic_ERP
 
@@ -18,7 +20,7 @@ PDFVIEWER=evince
 endif
 endif
 
-.PHONY: build clean
+.PHONY: build clean all
 
 build: $(TEX_NAME).pdf
 	@$(CLEAN_CMD)
@@ -28,10 +30,12 @@ clean:
 	@rm -f $(TEX_NAME).pdf
 	@echo "# cleaned" ;
 
+all: clean build
+
 view:
 	@$(PDFVIEWER) $(TEX_NAME).pdf > /dev/null 2>&1 &
 
-%.pdf: %.tex $(wildcard *.tex)
+%.pdf: %.tex $(wildcard *.tex) $(THIS)
 	@$(CLEAN_CMD)
 	@echo "# building <$@> stage 1" ;										\
 	pdflatex $(TEX_BUILD_FLAGS) "$<" > $@.stdout 2> $@.stderr ;				\

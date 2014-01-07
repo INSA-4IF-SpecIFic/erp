@@ -1,85 +1,82 @@
-\chapter*{M\'ethodes et phasage}
-\addcontentsline{toc}{chapter}{M\'ethodes - Modes op\'eratoires - Phasage}
-\chaptermark{M\'ethodes - Modes op\'eratoires - Phasage}
-
-\subsection*{M\'ethodes utilis\'ees}
-\addcontentsline{toc}{subsection}{M\'ethodes utilis\'ees}
+\chapter{Méthodes et phasage}
 
 
-M\'ethodes...
+\section{Méthodes et Outils utilisés}
 
-\subsection*{Phases}
-\addcontentsline{toc}{subsection}{Phases}
+En sa qualité de système de versionnage, nous utiliserons \textit{git} afin de garder une trace de toutes les modifications effectuées.
+La répartition des tâches quant à elle sera assistée par l'outils de gestion de tâches \textit{Trello}. Cet outils présente à l'utilisateur un tableau de bord contenant la liste des différentes tâches avec leur statut (à faire, en cours, réalisée) et les personnes affectées à celles-ci.
+Nous utiliserons en complément un \textit{diagramme de Gantt}, généré à partir de \textit{GanttProject}, qui nous permettra de visualiser dans le temps les diverses tâches composant notre projet. Ce diagramme apportera une vision globale du projet dans le temps.
+Enfin, nous utiliserons \LaTeX \ pour la rédaction des livrables.
+
+
+\section{Phases}
 
 Nous diviserons ce projet en 4 grandes phases :
-
 
 \begin{itemize}
  \item Organisation du projet
  \item Expression des besoins
  \item Construction des solutions
- \item \'Evaluation des sc\'enarii
-\end{itemize}
+ \item Évaluation des scénarii
+\end{itemize} 
 
-
-\subsubsection*{Organisation du projet}
+\subsection{Organisation du projet}
 
 Afin d'effectuer ce projet dans les meilleures conditions, il est primordial d'adopter une organisation efficace.
-Dans un premier temps, il est important de situer correctement l'\'etude dans son contexte. 
-Ceci est n\'ecessaire afin de ne pas perdre de temps \`a \'elaborer des solutions qui s'av\`ereront \^etre hors du champs de l'\'etude demand\'ee.
-Notre \'equipe prendra donc connaissance du projet en détails et identifiera sa place dans les activit\'es de l'entreprise.
+Dans un premier temps, il est important de situer correctement l'étude dans son contexte. 
+Ceci est nécessaire afin de ne pas perdre de temps à élaborer des solutions qui s'avèreront être hors du champs de l'étude demandée.
+Notre équipe prendra donc connaissance du projet en détails et identifiera sa place dans les activités de l'entreprise.
 
-L'ensemble des livrables \`a fournir devra \^etre identifi\'e afin de d\'eterminer les diff\'erentes t\^aches \`a r\'epartir au sein de l'\'equipe.
-Nous identifierons ensuite les contraintes et les risques li\'es \`a ce projet et \'etablirons des plans d'actions pour les g\'erer.
+L'ensemble des livrables à fournir devra être identifié afin de déterminer les différentes tâches à répartir au sein de l'équipe.
+Nous identifierons ensuite les contraintes et les risques liés à ce projet et établirons des plans d'actions pour les gérer.
 
-Afin de s'assurer de la qualit\'e des livrables, un plan d'assurance qualit\'e (PAQ) sera mis en place. Dans celui-ci figurera la gestion de la documentation du projet,
-le workflow, les proc\'edures de validations internes et externes, ainsi que l'ensemble des outils que nous utiliserons.
+Afin de s'assurer de la qualité des livrables, un plan d'assurance qualité (PAQ) sera mis en place. Dans celui-ci figurera la gestion de la documentation du projet,
+le workflow, les procédures de validations internes et externes, ainsi que l'ensemble des outils que nous utiliserons.
 
-\subsubsection*{Expression des besoins}
+\subsection{Expression des besoins}
 
 % 1) Analayse de l'existant
 % 2) Bencharking
 % 3) Cible
-% 4) Axes d'am\'elioration
+% 4) Axes d'amélioration
 % -> Dossier d'expression des besoins
 
-Cette phase d'expression des besoins consiste \`a faire tout d'abord une \'etude de l'existant.
-Il s'agit d'\'etudier les moyens organisationnels et informatiques d\'ej\`a mis en place dans l'entreprise afin de détecter les dysfonctionnements et de dimensionner les changements \`a effectuer concernant les processus et les strat\'egies de l'entreprise.
+Cette phase d'expression des besoins consiste à faire tout d'abord une étude de l'existant.
+Il s'agit d'étudier les moyens organisationnels et informatiques déjà mis en place dans l'entreprise afin de détecter les dysfonctionnements et de dimensionner les changements à effectuer concernant les processus et les stratégies de l'entreprise.
 
-Nous ciblerons notre \'etude aux processus de \textbf{gestion des contrats de maintenance}.
+Nous ciblerons notre étude aux processus de \textbf{gestion des contrats de maintenance}.
 
-Apr\`es ceci vient une \'etape de benchmarking dans laquelle il nous faudra \'etablir une comparaison entre l'entreprise et ses concurrents en termes \'economiques, d'activit\'es, de SI et de mod\`eles standards de processus.
-Pour cela il nous devrons choisir des indicateurs permettant l'\'evaluation des performances de l'entreprise. Les r\'esultats du benchmarking donnerons des bonnes partiques \`a suivre pour booster les performances de l'entreprise.
+Après ceci vient une étape de benchmarking dans laquelle il nous faudra établir une comparaison entre l'entreprise et ses concurrents en termes économiques, d'activités, de SI et de modèles standards de processus.
+Pour cela il nous devrons choisir des indicateurs permettant l'évaluation des performances de l'entreprise. Les résultats du benchmarking donnerons des bonnes partiques à suivre pour booster les performances de l'entreprise.
 
-A partir des résultats du benchmarking, des dysfonctionnements d\'etect\'es et des  attentes des clients, nous construirons des mod\`eles conceptuels du futur SI \`a mettre en place.
+A partir des résultats du benchmarking, des dysfonctionnements détectés et des  attentes des clients, nous construirons des modèles conceptuels du futur SI à mettre en place.
 
 
-\subsubsection*{Construction des solutions}
+\subsection{Construction des solutions}
 
-Dans le cadre de ce projet, nous \'elaborerons deux solutions :
+Dans le cadre de ce projet, nous élaborerons deux solutions :
 
 \begin{itemize}
- \item une solution \textit{sp\'ecifique} r\'epondant aux attentes organisationnelles et informatiques de la gestion des contrats de maintenance. Cette solution visera \`a r\'epondre aux besoins le plus pr\'ecisement possible.
- \item une solution \textit{standard} identifiant les \'el\'ements de r\'eferentiel standard pour la gestion des contrats de maintenance. Elle sera bas\'ee sur une solution ERP standard.
+ \item une solution \textit{spécifique} répondant aux attentes organisationnelles et informatiques de la gestion des contrats de maintenance. Cette solution visera à répondre aux besoins le plus précisement possible.
+ \item une solution \textit{standard} identifiant les éléments de réferentiel standard pour la gestion des contrats de maintenance. Elle sera basée sur une solution ERP standard.
 \end{itemize}
 
-\subsubsection*{\'Evaluation des sc\'enarii}
+\subsection{Évaluation des scénarii}
 
-Nous effectuerons une \'etude comparative des diff\'erents sc\'enarii propos\'es afin d'en faire ressortir les avantages et les d\'efauts de chacun.
-Nous chifferons les diff\'erentes solutions et d\'eterminerons les gains et les ROI.
-Nous aiderons ensuite le client \`a choisir la solution la plus adapt\'ee \`a ses besoins.
+Nous effectuerons une étude comparative des différents scénarii proposés afin d'en faire ressortir les avantages et les défauts de chacun.
+Nous chifferons les différentes solutions et déterminerons les gains et les ROI (Return On Investment).
+Nous aiderons ensuite le client à choisir la solution la plus adaptée à ses besoins.
 
 
-\subsection*{R\'esultats des phases}
-\addcontentsline{toc}{subsection}{R\'esultats des phases}
+\section{Résultats des phases}
 
 Chacune de ces phases engendrera des livrables.
 
 \begin{itemize}
  \item Organisation du projet : un dossier d'initialisation et un PAQ
- \item Expression des besoins : un dossier d'expression des besoins et un rapport de mod\'elisation
- \item Construction des solutions : un dossier de description des sc\'enarii
- \item \'Evaluation des sc\'enarii : un dossier de choix
+ \item Expression des besoins : un dossier d'expression des besoins et un rapport de modélisation
+ \item Construction des solutions : un dossier de description des scénarii
+ \item Évaluation des scénarii : un dossier de choix
 \end{itemize}
 
-A ces livrables s'ajouteront des livrables interm\'ediaires permettant un suivi plus fin du d\'eroulement du projet.
+A ces livrables s'ajouteront des livrables intermédiaires permettant un suivi plus fin du déroulement du projet.
