@@ -8,6 +8,8 @@
 #VIM backup files
 *~
 
+#PDF Files
+*.pdf
 
 
 #LaTeX files!
