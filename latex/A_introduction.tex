@@ -2,40 +2,40 @@
 
 \section{Object du projet}
 
-Le but du projet est la r\'ealisation de l’\'etude pr\'ealable pr\'eliminaire de la conception et de
-l’automatisation du syst\`eme d’information du domaine gestion des contrats de maintenance, chez SPIE SUD EST.
+Le but du projet est la réalisation de l’étude préalable préliminaire de la conception et de
+l’automatisation du système d’information du domaine gestion des contrats de maintenance, chez SPIE SUD EST.
 
-L'objectif du projet s'etend donc sur plusieur points~:
+L'objectif du projet s'étend donc sur plusieurs points~:
 \begin{itemize}
-    \item Sp\'ecifications de solutions informatiques (standard, sp\'ecifique)~;
-    \item Mise en oeuvre d’outil et de m\'ethode de conception~;
-    \item Mod\'elisation de la solution (\'elaboration de sc\'enarios)~;
-    \item Choix des moyens, Evaluation, etc~;
-    \item Elaboration du plan qualit\'e.
+    \item Spécifications de solutions informatiques (standard, spécifique)~;
+    \item Mise en oeuvre d’outils et de méthode de conception~;
+    \item Modélisation de la solution (élaboration de scénarii)~;
+    \item Choix des moyens, évaluation, etc~;
+    \item Elaboration du plan qualité.
 \end{itemize}
 
-\paragraph{Note Importante} Le but du projet \'etant la r\'ealisation  d'une \'etude pr\'ealable, nous nous
-limiterons aux phases de sp\'ecifications et de conception du syst\'eme d’information. En d'autre termes,
-nous ne prendrons donc pas en charge les phases suivants l’\'etude pr\'ealable, c’est \'a dire~:
-l’\'etude d'etaill\'ee ainsi que la r\'ealisation.
+\paragraph{Note Importante} Le but du projet étant la réalisation d'une étude préalable, nous nous
+limiterons aux phases de spécifications et de conception du système d’information. En d'autres termes,
+nous ne prendrons donc pas en charge les phases suivantes dans l’étude préalable, c’est à dire~:
+l’étude détaillée ainsi que la réalisation.
 
 
-\section{Context g\'en\'eral du projet}
+\section{Contexte général du projet}
 
 \subsection{SPIE}
 
-SPIE est une entreprise multinational d'origine francaise, et r\'ealisant encore aujourd'hui 62\% de son
-chiffre d'affaire en France, 25\% en europe et 13\% hors europe. Son objectif est d'am\'eliorer le confort
-de tout les jours, en r\'ealisant 66\% de son chiffre d'affaire en maintenance.
+SPIE est une multinationale d'origine francaise, et réalisant encore aujourd'hui 62\% de son
+chiffre d'affaire en France, 25\% en Europe et 13\% hors Europe. Son objectif est d'améliorer le confort
+de tous les jours via divers systèmes, en réalisant 66\% de son chiffre d'affaire par la maintenance de ceux-ci.
 
-SPIE est compos\'es des services~:
+SPIE est composé des services~:
 
 \begin{itemize}
-    \item Direction G\'en\'erale (DG)~;
+    \item Direction Générale (DG)~;
     \item Direction des Ressources Humaines (DRH)~;
-    \item Direction Administrative et Financiere~;
-    \item Direction de la Strat\'egie et du D\'eveloppement~;
-    \item Services R\'egionaux~:
+    \item Direction Administrative et Financière~;
+    \item Direction de la Stratégie et du Développement~;
+    \item Services Régionaux~:
     \begin{itemize}
         \item SPIE Ouest-Centre~;
         \item SPIE Sud-Ouest~;
@@ -49,62 +49,62 @@ SPIE est compos\'es des services~:
             \item SPIE Belgium.
         \end{itemize}
     \end{itemize}
-    \item Services de Sp\'ecialit\'es~:
+    \item Services de Spécialités~:
     \begin{itemize}
         \item SPIE Communications~;
         \item SPIE Oil \& Gas Service~;
-        \item SPIE Nucl\'eaire.
+        \item SPIE Nucléaire.
     \end{itemize}
 \end{itemize}
 
 \subsection{SPIE Sud-Est}
 
-Dans le cadre du projet, nous nous interressont seulement au service r\'egional SPIE SUD EST. Cette derni\`ere
-est compos\'ee de 3 directions de specialit\'ees sp\'ecifique qui dependent eux aussi de la Direction G\'en\'erale~:
+Dans le cadre du projet, nous nous intéresserons seulement au service régional SPIE SUD EST. Ce dernier
+est composé de 3 directions de spécialités qui dépendent eux aussi de la Direction Générale~:
 
 \begin{itemize}
-    \item G\'enie climatique~;
+    \item Génie climatique~;
     \item Industries~;
-    \item Syst\`emes d’information \& transport.
+    \item Systèmes d’information \& transport.
 \end{itemize}
 
-La direction des Syst\`emes d’information \& transport assure le d\'eployement et l’exploitation des syst\`emes de
-gestion~: Gestion des affaires et des moyens; Gestion des RH et payes; Comptabilit\'e; Tr\'esorerie ... De nombreux
-progiciel sont int\'egr\'es au SI de SPIE.
+
+La direction des Systèmes d’information \& transport assure le déploiement et l’exploitation des systèmes de
+gestion~: Gestion des affaires et des moyens; Gestion des RH et payes; Comptabilité; Trésorerie ... De nombreux
+progiciels sont intégrés au SI de SPIE.
 
 \subsection{Exemples de contrat de maintenance}
 
-SPIE r\'ealisant 66\% de sont chiffre d'affaire en maintenance, nous decrivons ici le fonctionnement des contrat de
-maintenance. Ceux ci sont donc composer de deux partie distincts~:
+SPIE réalisant 66\% de son chiffre d'affaire en maintenance, nous décrivons ici le fonctionnement des contrats de
+maintenance. Ceux-ci sont donc composés de deux parties distinctes~:
 
 \begin{description}
-    \item[Partie forfaitaire~:] Concerne la maintenance pr\'eventive ou curative re\'guli\`ere des \'equipement
-    apr\`es installation. Exemple, la maintenance de l'\'eclairage publique d'une ville.
+    \item[Partie forfaitaire~:] Concerne la maintenance préventive ou curative régulière des équipements
+    après installation. Exemple, la maintenance de l'éclairage publique d'une ville.
 
-    \item[Partie bon de commande~:] Concerne la maintenance curative exceptionnel suit \`a un accident, vendalisme ou
-    m\^eme pour des travaux induits comme l'am\'elioration des installations ou le traitement de l’obsolescence.
+    \item[Partie bon de commande~:] Concerne la maintenance curative exceptionnelle suite à un accident, vendalisme et
+    même les travaux induits comme l'amélioration des installations ou le traitement de l’obsolescence.
 \end{description}
 
 
 \pagebreak
-\section{Positionnement dans le cycle g\'en\'eral du d\'eveloppement des SI}
+\section{Positionnement dans le cycle général du développement des SI}
 
-SPIE est malencontreusement \'equip\'e d'une vari\'et\'e de progiciel pour chaqu'une des taches, d'ou son intention
-de changer le tout \'a l'aide de son appel offre dont nous somme en train de commencer \'a r\'epondre \'a
-traver ce tout premier document pr\'esent.
+SPIE est malheureusement équipé d'une variété de progiciels pour chacune des tâches, d'où son intention
+de changer le tout pour un ERP unique (SAP).
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=140mm]{A_SI_actuelles.png}
-    \caption{Cartographie g\'en\'erale du SI de SPIE}
+    \includegraphics[width=140mm]{./images/A_SI_actuelles.png}
+    \caption{Cartographie générale du SI de SPIE}
     \label{diagram:si_map}
 \end{figure}
 
 Les attentes du clients sont~:
 
 \begin{itemize}
-    \item Pour la solution standard : \'evoluer vers un ERP unique (SAP)
-    \item Pour les op\'erations de maintenance, souhait de saisir les \'ev\'enements et les comptes rendus \`a la
-    sources (nomadisme)
+    \item Pour la solution standard : évoluer vers un ERP unique (SAP)
+    \item Pour les opérations de maintenance : souhait de saisir les événements et les compte-rendus à la
+    source (nomadisme)
 \end{itemize}
 
