@@ -22,4 +22,29 @@ Assisté de ses collègues, possédant une expérience précieuse en solutions E
 \section{Responsable communication~: Martin~\textsc{Wetterwald}}
 Canal de communication principal, il sera l'interface privilégiée entre l'équipe et les clients, en plus de garantir une bonne communication intra-équipe. Il sera le premier à être contacté par les clients en cas de problème avec les livrables (difficulté de transmission ou non-validation de la part du client).
 
-
+\section{Histogramme des charges}
+\begin{tikzpicture}
+  \centering
+  \begin{axis}[
+	ybar,
+    height=6cm,
+    width=13cm,
+    enlarge y limits=false,
+    axis lines*=left,
+    ymin=0,
+    ymax=40,
+     legend style={at={(0.5,-0.2)},
+        anchor=north,legend columns=1},
+		ylabel={Charge (h)},
+        symbolic x coords={Guillaume,Thierry,Ahmed,Marina,Martin,Valentina},
+     xtick=data,
+        nodes near coords,
+    every node near coord/.append style={
+        anchor=mid west,
+        rotate=70
+    }
+    ]
+	\addplot coordinates {(Guillaume,38) (Thierry,37) (Ahmed,38) (Marina,38) (Martin,38) (Valentina,39)};
+  \legend{Charge (h)}
+  \end{axis}
+\end{tikzpicture}
