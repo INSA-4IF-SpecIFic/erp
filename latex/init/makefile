@@ -2,7 +2,6 @@
 THIS := $(lastword $(MAKEFILE_LIST))
 
 TEX_NAME=SpecIFic_ERP
-TEX_NAME2=PAQ_SpecIFic
 
 TEX_BUILD_FLAGS= -interaction=nonstopmode -file-line-error
 
@@ -23,20 +22,18 @@ endif
 
 .PHONY: build clean all
 
-build: $(TEX_NAME).pdf $(TEX_NAME2).pdf
+build: $(TEX_NAME).pdf
 	@$(CLEAN_CMD)
 
 clean:
 	@$(CLEAN_CMD)
 	@rm -f $(TEX_NAME).pdf
-	@rm -f $(TEX_NAME2).pdf
 	@echo "# cleaned" ;
 
 all: clean build
 
 view:
 	@$(PDFVIEWER) $(TEX_NAME).pdf > /dev/null 2>&1 &
-	@$(PDFVIEWER) $(TEX_NAME2).pdf > /dev/null 2>&1 &
 
 %.pdf: %.tex $(wildcard *.tex) $(THIS)
 	@$(CLEAN_CMD)
