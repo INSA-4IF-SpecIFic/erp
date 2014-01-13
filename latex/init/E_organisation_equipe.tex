@@ -33,18 +33,18 @@ Canal de communication principal, il sera l'interface privilégiée entre l'équ
     axis lines*=left,
     ymin=0,
     ymax=40,
+	xticklabels={Guillaume \textsc{Abadie},Thierry \textsc{Cantenot},Ahmed \textsc{Kachkach},Marina \textsc{Julien},Martin \textsc{Wetterwald},Valentina \textsc{Zantedeschi}},xtick={1,...,6},
+	x tick label style={rotate=40,anchor=east},
      legend style={at={(0.5,-0.2)},
-        anchor=north,legend columns=1},
+        anchor=north,legend columns=-1},
 		ylabel={Charge (h)},
-        symbolic x coords={Guillaume,Thierry,Ahmed,Marina,Martin,Valentina},
-     xtick=data,
         nodes near coords,
     every node near coord/.append style={
         anchor=mid west,
         rotate=70
     }
     ]
-	\addplot coordinates {(Guillaume,38) (Thierry,37) (Ahmed,38) (Marina,38) (Martin,38) (Valentina,39)};
+	\addplot coordinates {(1,38) (2,37) (3,38) (4,38) (5,38) (6,39)};
   \legend{Charge (h)}
   \end{axis}
 \end{tikzpicture}
