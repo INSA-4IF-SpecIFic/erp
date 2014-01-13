@@ -22,7 +22,7 @@ endif
 
 .PHONY: build clean all
 
-build: $(TEX_NAME).pdf $(TEX_NAME2).pdf
+build: $(TEX_NAME).pdf
 	@$(CLEAN_CMD)
 
 clean:
