@@ -23,32 +23,38 @@ Assisté de ses collègues, possédant une expérience précieuse en solutions E
 Canal de communication principal, il sera l'interface privilégiée entre l'équipe et les clients, en plus de garantir une bonne communication intra-équipe. Il sera le premier à être contacté par les clients en cas de problème avec les livrables (difficulté de transmission ou non-validation de la part du client).
 
 \section{Histogramme des charges}
-\begin{tikzpicture}
-  \centering
-  \begin{axis}[
-	ybar,
-	bar width=30pt,
-    height=6cm,
-    width=13cm,
-    enlarge y limits=false,
-    axis lines*=left,
-    ymin=0,
-    ymax=40,
-	xticklabels={Guillaume \textsc{Abadie},Thierry \textsc{Cantenot},Ahmed \textsc{Kachkach},Marina \textsc{Julien},Martin \textsc{Wetterwald},Valentina \textsc{Zantedeschi}},
-	xtick={1,...,6},
-	x tick label style={rotate=40,anchor=east},
-	legend style={
-		at={(1.1,0.7)},
-        anchor=north,legend columns=-1
-	},
-	ylabel={Charge (h)},
-	nodes near coords,
-    every node near coord/.append style={
-        anchor=mid west,
-        rotate=70
-    }
-    ]
-	\addplot coordinates {(1,38) (2,37) (3,38) (4,38) (5,38) (6,39)};
-  \legend{Charge (h)}
-  \end{axis}
-\end{tikzpicture}
+L'histogramme en figure \vref{fig:hist_charges} présente la \textbf{charge de travail} en heures par ressource. On peut constater que la charge est équitablement répartie entre les ressources. Elle est le résultat de la somme des charges des tâches assignées auxquelles s'ajoute une heure par semaine de réunion et d'organisation.
+
+\begin{figure}[h!]
+	\begin{tikzpicture}
+	  \centering
+	  \begin{axis}[
+		ybar,
+		bar width=30pt,
+		height=5cm,
+		width=13cm,
+		enlarge y limits=false,
+		axis lines*=left,
+		ymin=0,
+		ymax=40,
+		xticklabels={Guillaume \textsc{Abadie},Thierry \textsc{Cantenot},Ahmed \textsc{Kachkach},Marina \textsc{Julien},Martin \textsc{Wetterwald},Valentina \textsc{Zantedeschi}},
+		xtick={1,...,6},
+		x tick label style={rotate=40,anchor=east},
+		legend style={
+			at={(1.1,0.7)},
+			anchor=north,legend columns=-1
+		},
+		ylabel={Charge (h)},
+		nodes near coords,
+		every node near coord/.append style={
+			anchor=mid west,
+			rotate=70
+		}
+		]
+		\addplot coordinates {(1,38) (2,37) (3,38) (4,38) (5,38) (6,39)};
+	  \legend{Charge (h)}
+	  \end{axis}
+	\end{tikzpicture}
+	\caption{Histogramme des charges}
+	\label{fig:hist_charges}
+\end{figure}
