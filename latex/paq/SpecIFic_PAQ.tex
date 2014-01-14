@@ -1,0 +1,98 @@
+% --------------------------------------------------------------- CONFIGURATIONS
+
+%ifdef TWOSIDE
+	%\documentclass[a4paper,12pt,final,twoside,openright]{book}
+%elif ONESIDE
+	\documentclass[a4paper,12pt,final,oneside]{book}
+%endif
+
+\usepackage{rapport}
+
+
+% -------------------------------------------------------------- META: CONSTANTS
+
+\newcommand{\reporttitle}{ERP}
+\newcommand{\enseignants}{Youssef~\textsc{Amghar}\\ Anne~\textsc{Legait}\\ Pierre-Alain~\textsc{Millet}\\ Mohamed~\textsc{Ouhalima}}
+\newcommand{\reportauthor}{Guillaume~\textsc{Abadie}\\ Thierry~\textsc{Cantenot}\\ Marina~\textsc{Julien}\\ Ahmed~\textsc{Kachkach}\\ Martin~\textsc{Wetterwald}\\ Valentina~\textsc{Zantedeschi}}
+\newcommand{\hexanome}{SpecIFic}
+\newcommand{\reportsubject}{Livrable de projet}
+\newcommand{\stagetopic}{Plan d'Assurance Qualité}
+\newcommand{\dateperiod}{du 17 décembre 2013 au 11 mars 2014}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength{\parskip}{1ex} % Espace entre les paragraphes
+
+\hypersetup{
+	pdftitle={\reporttitle},%
+		pdfauthor={\reportauthor},%
+		pdfsubject={\reportsubject},%
+		pdfkeywords={INSA Lyon}
+}
+
+\title{\reporttitle}
+\author{\reportauthor}
+%\setcounter{tocdepth}{4}
+
+
+% ------------------------------------------------------------------------- FILE
+
+\begin{document}
+
+
+    % ------------------------------------------------------------------- HEADER
+
+	\renewcommand{\chaptername}{} %\renewcommand{\thechapter}{}
+	\renewcommand{\contentsname}{Sommaire}
+
+	\pagestyle{empty}
+	\pagenumbering{Roman}
+
+
+    % ------------------------------------------------------------ HEADER: TITLE
+
+	\include{title}
+
+	%ifdef TWOSIDE
+		%\cleardoublepage
+	%endif
+
+	%\include{title2}
+
+	%ifdef TWOSIDE
+		%  \newpage
+		%	\null
+		%	\vfill
+	%endif
+
+
+    % --------------------------------------------------- HEADER: CONFIGURATIONS
+
+	\sloppy          % Justification moins stricte : des mots ne dépasseront pas des paragraphes
+
+    \frontmatter
+		\pagestyle{empty}
+		\tableofcontents
+		\addtocontents{toc}{\protect\thispagestyle{empty}}
+
+	\mainmatter
+	\pagestyle{headings}
+
+	\renewcommand{\thechapter}{\Alph{chapter}}
+	\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername\ \thechapter.\ #1}}{}}
+	\renewcommand{\sectionmark}[1]{\markright{\thesection{} #1}}
+
+
+    % ------------------------------------------------------------------ CONTENT
+
+	\include{paq}
+
+	%\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+	%\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+	%\addcontentsline{toc}{part}{Annexes}
+	%\part*{Annexes}
+	%\appendix
+	%\include{implementationExercices}
+
+
+    % ------------------------------------------------------------------- FOOTER
+\end{document}

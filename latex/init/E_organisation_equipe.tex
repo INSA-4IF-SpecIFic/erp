@@ -1,0 +1,60 @@
+\chapter{Organisation de l'équipe}
+Cette partie a pour but de présenter les différents rôles de l'équipe projet que nous avons constituée. Pour chacun des rôles, nous présenterons leurs attributions.
+
+\section{Chef de projet~: Valentina~\textsc{Zantedeschi}}
+Chargée de la planification et de l'organisation, elle est également garante de la coordination et de la cohésion du groupe.
+
+Elle effectuera le \textbf{suivi stratégique} du projet en évaluant les risques et en s'assurant du respect des objectifs dans les délais impartis. Elle veillera au bon \textbf{pilotage opérationnel} en planifiant les tâches et en les encadrant. Elle mettra tout en œuvre pour garantir une \textbf{organisation humaine} efficace en définissant le rôle de chacun des membres, en leur attribuant des tâches et en résolvant les éventuels conflits. Enfin, elle s'assurera du bon \textbf{pilotage de la production}, en suivant les résultats et les livrables.
+
+\section{Responsable qualité~: Marina~\textsc{Julien}}
+D'une manière générale, elle veillera à la \textbf{qualité des livrables} fournis au client. Elle s'assurera également de la cohésion entre les livrables, de la maintenance et du \textbf{respect du Plan d'Assurance Qualité}.
+
+\section{Expert méthode et outils~: Thierry \textsc{Cantenot}}
+Il sera chargé de \textbf{conseiller}, d'\textbf{assister}, de \textbf{former} et d'\textbf{informer}. Il effectuera également la \textbf{veille technologique} quant aux outils utilisés et \textbf{proposera des évolutions} qu'il juge nécessaires.
+
+\section{Expert métier~: Guillaume \textsc{Abadie}}
+Il enrichira l'équipe de sa connaissance métier de l'entreprise \texttt{SPI} et, par sa fine compréhension, permettra l'adéquation de la solution conçue aux besoins de l'entreprise. Il est le référent par excellence au sein de notre équipe pour toutes les questions à propos de l'entreprise \texttt{SPI}.
+
+
+\section{Expert ERP~: Ahmed~\textsc{Kachkach}}
+Assisté de ses collègues, possédant une expérience précieuse en solutions ERP, sa mission principale sera d'être le point d'appui de l'équipe pour l'\textbf{analyse} et la \textbf{conception} de l'\textbf{architecture générale}, ainsi que pour la \textbf{modélisation} et la \textbf{configuration} des \textbf{solutions} ERP.
+
+\section{Responsable communication~: Martin~\textsc{Wetterwald}}
+Canal de communication principal, il sera l'interface privilégiée entre l'équipe et les clients, en plus de garantir une bonne communication intra-équipe. Il sera le premier à être contacté par les clients en cas de problème avec les livrables (difficulté de transmission ou non-validation de la part du client).
+
+\section{Histogramme des charges}
+L'histogramme en figure \vref{fig:hist_charges} présente la \textbf{charge de travail} en heures par ressource. On peut constater que la charge est équitablement répartie entre les ressources. Elle est le résultat de la somme des charges des tâches assignées auxquelles s'ajoute une heure par semaine de réunion et d'organisation.
+
+\begin{figure}[h!]
+	\begin{tikzpicture}
+	  \centering
+	  \begin{axis}[
+		ybar,
+		bar width=30pt,
+		height=5cm,
+		width=13cm,
+		enlarge y limits=false,
+		axis lines*=left,
+		ymin=0,
+		ymax=40,
+		xticklabels={Guillaume \textsc{Abadie},Thierry \textsc{Cantenot},Ahmed \textsc{Kachkach},Marina \textsc{Julien},Martin \textsc{Wetterwald},Valentina \textsc{Zantedeschi}},
+		xtick={1,...,6},
+		x tick label style={rotate=40,anchor=east},
+		legend style={
+			at={(1.1,0.7)},
+			anchor=north,legend columns=-1
+		},
+		ylabel={Charge (h)},
+		nodes near coords,
+		every node near coord/.append style={
+			anchor=mid west,
+			rotate=70
+		}
+		]
+		\addplot coordinates {(1,38) (2,37) (3,38) (4,38) (5,38) (6,39)};
+	  \legend{Charge (h)}
+	  \end{axis}
+	\end{tikzpicture}
+	\caption{Histogramme des charges}
+	\label{fig:hist_charges}
+\end{figure}
