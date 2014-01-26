@@ -173,11 +173,13 @@ ci se deroule alors en plusieurs \'etape clef~:
 
 \subsection{Cartographie applicative}
 
+La figure \vref{fig:carto_app} représente la cartographie applicative du système de gestion de contrats de maintenance de SPIE.
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=140mm]{./images/cartographie_applicative.png}
     \caption{Cartographie applicative du système de gestion de contrats de maintenance de SPIE}
-    \label{diagram:carto_app}
+    \label{fig:carto_app}
 \end{figure}
 
 \subsection{Description de l'architecture applicative}
@@ -204,31 +206,42 @@ Le système de gestion de contrats de maintenance utilise 5 applications différ
 
 \subsubsection{Clarify}
 
-Clarify est un outils de gestion des appels des clients. Lorsqu'un client appelle, cet outil enregistre l'appel et permet de renseigner le système de gestion avec les demandes de celui-ci. Le système de gestion déclenche ensuite une intervention d'un technicien qui, après avoir agit, le signale au système de gestion.
+Clarify est un outils de gestion des appels des clients.
+Lorsqu'un client appelle, cet outil enregistre l'appel et permet de renseigner le système de gestion avec les demandes de celui-ci.
+Le système de gestion déclenche ensuite une intervention d'un technicien qui, après avoir agit, le signale au système de gestion.
 
 Clarify utilise un GMAO (gestion de maintenance assistée par ordinateur) pour assurer sa maintenance corrective et préventive.
 
 
 \subsubsection{RHI/NdF}
 
-Suite à une intervention, le technicien doit reporté son temps de travail. L'application RHI permet cela. Il doit aussi signaler les éventuels frais générés par l'intervention via l'application NdF.
+Suite à une intervention, le technicien doit reporter son temps de travail. L'application RHI permet cela.
+
+Il doit aussi signaler les éventuels frais générés par l'intervention via l'application NdF.
+Les frais concernés peuvent concerner les côuts de transport et de matériel utilisés lors de l'intervention.
 
 \subsubsection{ADV}
 
 Lors de l'établissement d'un contrat ou d'une commande avec le Client SPIE par le Responsable Contrat, celui doit rentrer les informations relatives à ceux-ci dans le logiciel d'Administration des Ventes.
-De plus, le Service Marché utilise cette application pour éditer les factures clients.
+Ce système permet à SPIE de garder une trace pérenne des contrats effectués et s'assurer leur traçabilité.
+
+Cette application est aussi utilisée par le Service Marché pour éditer les factures clients.
 
 \subsubsection{ADA/ADM}
 
-Pour répondre aux demandes du client, des achats sont nécessaires.
-Le Responsable Contrat passe des demandes d'achats au Service Achat qui va effectuer les commandes fournisseurs.
+Pour répondre aux demandes du client et assurer la maintenance de ses diverses installations, des achats sont nécessaires.
+Le Responsable Contrat passe des demandes d'achats au Service Achat qui va effectuer les commandes auprès des fournisseurs.
 Le Service d'Achat rentre alors les différentes commandes dans l'application ADA/ADM\@.
+Cette application permet de garder une trace des différents achats effectués par SPIE\@.
+L'enregistrement de ces transactions permet une analyse ultérieure des dépenses.
+
 Les techniciens de maintenance utilisent aussi l'application ADA/ADM pour enregistrer les achats de petites fournitures utiles à leurs interventions.
 
 \subsubsection{SUPRA}
 
-Cette application permet aux Responsable Contrat de suivre les différents contrats en cours. Il peut alors étudier lesquels sont rentables et lesquels coûtent trop d'argent. En effet, il est possible que le renouvellement fréquent d'un contrat d'approvisionnement coûte trop cher et qu'il serait bénéfique de réévaluer le contrat.
-
+Cette application permet aux Responsable Contrat de suivre les différents contrats en cours.
+Il peut alors étudier lesquels de ces contrats sont rentables et lesquels coûtent trop d'argent.
+En effet, il est possible que le renouvellement fréquent d'un contrat d'approvisionnement coûte trop cher et qu'il serait bénéfique de réévaluer le contrat.
 
 \subsection{Améliorations possibles}
 
@@ -244,3 +257,5 @@ Ces appareils leurs permettraient par exemple :
 \end{itemize}
 
 \section{Dysfonctionnements}
+
+=>~???
