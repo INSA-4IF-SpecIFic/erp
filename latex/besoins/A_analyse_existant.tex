@@ -4,7 +4,7 @@ SPIE est un leader européen dans les domaines de l'énergie et des communicatio
 
 SPIE Sud-Est est présente en Auvergne, en Rhône-Alpes, en Provence-Alpes-Côte d'Azur et en Suisse.
 
-Elle comporte trois spécialités~: 
+Elle comporte trois spécialités~:
 \begin{itemize}
 	\item transports et systèmes d'information~;
 	\item industries~;
@@ -122,9 +122,7 @@ Pendant la dur\'ee du contratde maintenance, il est possible que le client ai be
 Ce sous processus est d\'edi\'e et divis\'es en etapes distinctes.
 
 \begin{itemize}
-    \item Le client va donc demander de mani\'ere exceptionnel la realisation des travaux induits a
-    SPIE. Le cahier des charges va alors \'etre rediger. Il est possible que le sous processus soit
-    abandoner ici. Sinon le cahier des charges est transmit \'a l'entit\'e travaux~;
+    \item Le client va donc demander de mani\'ere exceptionnel la realisation des travaux induits à SPIE\@. Le cahier des charges va alors \'etre rediger. Il est possible que le sous processus soit abandoner ici. Sinon le cahier des charges est transmit \'a l'entit\'e travaux~;
     \item Si le contrat inclus les modalit'ees d'\'execution des travaux induits, alors le devis est
     automatiquement r\'edig\'e mais en d\'epense control\'e sinon deja present dans les closes du
     contrat client, valid\'e puis envoy\'e au client~;
@@ -157,20 +155,36 @@ ci se deroule alors en plusieurs \'etape clef~:
     r\'ealis\'ee.
 \end{itemize}
 
+\pagebreak
+
+\section{Tableau crois\'e Services / Activit\'es}
+
+\begin{landscape}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=220mm]{../../pipeautage/tableau_service_activitee.pdf}
+    \caption{Tableau crois\'e Service / Activit\'e}
+    \label{tableau:service_activitee}
+\end{figure}
+\end{landscape}
+
+
 \section{Existant informatique}
 
 \subsection{Cartographie applicative}
 
-\begin{figure}[h]
+La figure \vref{fig:carto_app} représente la cartographie applicative du système de gestion de contrats de maintenance de SPIE.
+
+\begin{figure}[h!]
     \centering
     \includegraphics[width=140mm]{./images/cartographie_applicative.png}
     \caption{Cartographie applicative du système de gestion de contrats de maintenance de SPIE}
-    \label{diagram:carto_app}
+    \label{fig:carto_app}
 \end{figure}
 
 \subsection{Description de l'architecture applicative}
 
-Le système de gestion de contrats utilise 5 applications différentes :
+Le système de gestion de contrats de maintenance utilise 5 applications différentes :
 
 %ADV : Administration des ventes
 %ADA : Administration des achats
@@ -192,16 +206,46 @@ Le système de gestion de contrats utilise 5 applications différentes :
 
 \subsubsection{Clarify}
 
-Clarify est un outils de gestion des appels des clients. Lorsqu'un client appelle,  %TODO
+Clarify est un outils de gestion des appels des clients.
+Lorsqu'un client appelle, cet outil enregistre l'appel et permet de renseigner le système de gestion avec les demandes de celui-ci.
+Le système de gestion déclenche ensuite une intervention d'un technicien qui, après avoir agit, le signale au système de gestion.
+
+Clarify utilise un GMAO (gestion de maintenance assistée par ordinateur) pour assurer sa maintenance corrective et préventive.
+
 
 \subsubsection{RHI/NdF}
+
+Suite à une intervention, le technicien doit reporter son temps de travail. L'application RHI permet cela.
+
+Il doit aussi signaler les éventuels frais générés par l'intervention via l'application NdF.
+Les frais concernés peuvent concerner les côuts de transport et de matériel utilisés lors de l'intervention.
+
 \subsubsection{ADV}
+
+Lors de l'établissement d'un contrat ou d'une commande avec le Client SPIE par le Responsable Contrat, celui doit rentrer les informations relatives à ceux-ci dans le logiciel d'Administration des Ventes.
+Ce système permet à SPIE de garder une trace pérenne des contrats effectués et s'assurer leur traçabilité.
+
+Cette application est aussi utilisée par le Service Marché pour éditer les factures clients.
+
 \subsubsection{ADA/ADM}
+
+Pour répondre aux demandes du client et assurer la maintenance de ses diverses installations, des achats sont nécessaires.
+Le Responsable Contrat passe des demandes d'achats au Service Achat qui va effectuer les commandes auprès des fournisseurs.
+Le Service d'Achat rentre alors les différentes commandes dans l'application ADA/ADM\@.
+Cette application permet de garder une trace des différents achats effectués par SPIE\@.
+L'enregistrement de ces transactions permet une analyse ultérieure des dépenses.
+
+Les techniciens de maintenance utilisent aussi l'application ADA/ADM pour enregistrer les achats de petites fournitures utiles à leurs interventions.
+
 \subsubsection{SUPRA}
+
+Cette application permet aux Responsable Contrat de suivre les différents contrats en cours.
+Il peut alors étudier lesquels de ces contrats sont rentables et lesquels coûtent trop d'argent.
+En effet, il est possible que le renouvellement fréquent d'un contrat d'approvisionnement coûte trop cher et qu'il serait bénéfique de réévaluer le contrat.
 
 \subsection{Améliorations possibles}
 
-Nous pourrions penser à ajouter un dispositif nomade que les techniciens de SPIE puissent emporter avec eux lors de leurs opérations de maintenance. 
+Nous pourrions penser à ajouter un dispositif nomade que les techniciens de SPIE puissent emporter avec eux lors de leurs opérations de maintenance.
 Ces appareils leurs permettraient par exemple :
 
 \begin{itemize}
@@ -213,3 +257,5 @@ Ces appareils leurs permettraient par exemple :
 \end{itemize}
 
 \section{Dysfonctionnements}
+
+=>~???
