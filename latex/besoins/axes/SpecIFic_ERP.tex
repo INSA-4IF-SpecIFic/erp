@@ -52,9 +52,8 @@
 	\mainmatter
 	\pagestyle{headings}
 
-	\renewcommand{\thechapter}{\Alph{chapter}}
-	\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername\ \thechapter.\ #1}}{}}
-	\renewcommand{\sectionmark}[1]{\markright{\thesection{} #1}}
+	\renewcommand{\thesection}{\Alph{chapter}}
+	\renewcommand{\sectionmark}[1]{\markboth{\MakeUppercase{\thesection.\ #1}}{}}
 
 
     % ------------------------------------------------------------------ CONTENT
